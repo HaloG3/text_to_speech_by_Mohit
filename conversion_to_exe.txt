@@ -1,0 +1,17 @@
+yes this is python program and we need to convert this in the exe format for running on any machine(windows)
+so i use a library called : pyinstaller
+process:
+go to the folder where your code is and follow the below instructions-
+ run this coomand in terminal : pyinstaller --onefile --windowed (your file name).py  #paranthesis is not requited i use it for example
+ your file is converted but you can do some additional thingssuch as 
+ # --onefile is for compliling the whole program into just one exe file
+ # if you face dll file missing error then use below command in terminal:
+ pyinstaller --onefile --windowed --hidden-import pygame (your file name).py
+ some antivirus software may block the .exe.  friends "Run as Administrator"
+ 
+ if still doesnt work then use this command  : pyinstaller --onefile --noconsole (file name).py
+ and you want all this before faceing any error so directly use this command:
+ --onefile --windowed --hidden-import pygame --noconsole (your file name).py
+ 
+
+
